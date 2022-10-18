@@ -11,18 +11,17 @@
     <script>
       // 10進数から2進数に変換する処理
 
-      let suuji = 56
-      let moji = ''
+      
+      //let moji = ''
       let arr = []
-
-      for (let i = 0; i < 100; i++) {
-        if (suuji > 0) {
-          arr.push(String(suuji % 2))
-          suuji = Math.floor(suuji / 2)
-        }
+      let suuji = 56
+      
+      for (let i = 0; i < 6; i++) {
+        arr.push(String(suuji % 2))
+        suuji = Math.floor(suuji / 2)
       }
-
       console.log(arr[5] + arr[4] + arr[3] + arr[2] + arr[1] + arr[0])
+
     </script>
   </body>
 </html>
