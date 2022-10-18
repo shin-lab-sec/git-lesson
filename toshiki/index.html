@@ -11,18 +11,17 @@
     <script>
       // 10進数から2進数に変換する処理
 
-      let suuji = 56
-      let moji = ''
-      let arr = []
-
-      for (let i = 0; i < 100; i++) {
-        if (suuji > 0) {
-          arr.push(String(suuji % 2))
-          suuji = Math.floor(suuji / 2)
-        }
+      
+      let decimal = 56
+      let binary = ""
+      
+      while(decimal > 0) {
+        binary = decimal % 2 + binary
+        // console.log(binary,decimal)
+        decimal = ~~(decimal / 2)
       }
+      console.log(binary)
 
-      console.log(arr[5] + arr[4] + arr[3] + arr[2] + arr[1] + arr[0])
     </script>
   </body>
 </html>
